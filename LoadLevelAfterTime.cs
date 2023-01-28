@@ -12,13 +12,13 @@ public class LoadLevelAfterTime : MonoBehaviour
     [SerializeField]
     private string sceneNameToLoad;
 
-    private void timeElapsed;
+    private float timeElapsed;
    
 
     // Update is called once per frame
     void Update()
     {
-        timeElapsed+=Time.deltaTime
+        timeElapsed+=Time.deltaTime;
 
         if (timeElapsed > delayBeforeLoading)
         {
